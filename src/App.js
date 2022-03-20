@@ -1,15 +1,14 @@
-import "./App.css";
-import React from "react";
+import logo from './logo.svg';
+import ListadoPersonas from './Listado';
+import PostFetchPersonas from './FormDatos';
+import './App.css';
+
 function App() {
   return (
-    
-  <div className="Formulario">
-  <input type="text" id="Nom"  placeholder="Nombre"/> 
-  <input type="text" id="Ape"  placeholder="Apellido"/>
-  <input type="text" id="Nume" placeholder="Telefono"/>
-  <input type="submit" value="Guardar"/>
-  <input type="reset" value="Cancelar"/>
-</div> 
-  )
-  } 
+    <div className='App'>
+      <PostFetchPersonas/>
+      <ListadoPersonas/>
+    </div>
+  );
+}
 export default App;
