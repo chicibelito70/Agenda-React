@@ -1,21 +1,15 @@
 import "./App.css";
 import React from "react";
-//import Agenda from "./components/bodyContacts/Agenda";
-import Title from "./titulo";
-//import Roller from "./components/utilities/bottons/Roller";
-import './App.css';
-
 function App() {
   return (
     
-    <div>
-    <Title value="Mi contactos" classType="TitleMain" />
-    <div className="App">
-    
-    </div>
-    
-  </div>
+  <div className="Formulario">
+  <input type="text" id="Nom"  placeholder="Nombre"/> 
+  <input type="text" id="Ape"  placeholder="Apellido"/>
+  <input type="text" id="Nume" placeholder="Telefono"/>
+  <input type="submit" value="Guardar"/>
+  <input type="reset" value="Cancelar"/>
+</div> 
   )
-  };
-
+  } 
 export default App;
